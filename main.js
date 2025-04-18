@@ -31,6 +31,18 @@ const CHANNEL_MAP = {
     'ID_NGUON_2': 'ID_DICH_2'
 };
 
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('Bot is running!');
+});
+
+app.listen(PORT, () => {
+  console.log(`🌐 Web server running on port ${PORT}`);
+});
+
 // Thay emoji trong đoạn text
 function replaceEmojis(text) {
     if (!text) return '';
