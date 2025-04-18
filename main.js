@@ -97,3 +97,4 @@ client.on('ready', () => {
 
 // Đăng nhập bot bằng token trong .env
 client.login(process.env.TOKEN);
+
